@@ -1,0 +1,10 @@
+*.m text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+*.slx binary
+*.mlx binary
+*.mat binary
+*.fig binary
+*.pdf binary

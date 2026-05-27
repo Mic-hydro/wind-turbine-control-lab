@@ -1,0 +1,35 @@
+# MATLAB / Simulink generated files
+slprj/
+codegen/
+*.slxc
+*.slx.r20*
+*.mldatx
+*.asv
+*.autosave
+*.m~
+*_saveas.m
+
+# Logs and temporary files
+*.log
+*.tmp
+__live_export_tmp.m
+
+# LaTeX build intermediates
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Draft/source docs kept local
+docs/model_theory_and_control.*
+docs/wind_turbine_theory_manual_detailed*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
