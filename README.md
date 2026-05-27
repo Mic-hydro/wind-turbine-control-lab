@@ -1,6 +1,6 @@
 # Wind Turbine Control Models
 
-MATLAB/Simulink workspace for wind-turbine control exercises. The repository contains the Simulink models, the FAST-derived data used by the models, and small helper scripts so another user can open and validate the project without reconstructing base-workspace variables by hand.
+MATLAB/Simulink lab for wind-turbine control exercises. The repository contains runnable Simulink models, FAST-derived input data, and helper scripts so another user can open, validate, and simulate the project without rebuilding the MATLAB base workspace by hand.
 
 ## Inspiration and Attribution
 
@@ -31,7 +31,7 @@ check_models
 open_system(fullfile("models", "WindT_Control.slx"))
 ```
 
-`init_wt` defaults to `_wind6.mat`. To select another wind dataset:
+`init_wt` defaults to `wind6`. To select another wind dataset:
 
 ```matlab
 init_wt("wind3")
@@ -44,7 +44,7 @@ For compatibility with the original Live Script, `init_wt` still exports a few l
 
 ## Run Simulations
 
-Run the main model with the default `_wind6.mat` wind data:
+Run the main model with the default `wind6` wind data:
 
 ```matlab
 cd("C:\path\to\WT")
@@ -60,7 +60,7 @@ out = run_simulation("WindT_Control", "wind6", 30);
 
 Available models are `WindT_Control`, `Region3`, and `naif`. Available wind cases are `wind3`, `wind6`, and `wind10`.
 
-Simulation signals are written to `out.Simulazioni_sim`.
+Simulation outputs are returned in `out`, with logged signals available under `out.Simulazioni_sim`.
 
 ## Complete the Exercise
 
@@ -80,6 +80,8 @@ Use only these files in `docs/`:
 
 ## Git Notes
 
-The `.slx`, `.mlx`, and `.mat` files are binary but small enough for normal Git hosting. Generated MATLAB/Simulink artifacts such as `slprj/`, `*.slxc`, autosaves, logs, and temporary files are ignored.
+The `.slx`, `.mlx`, `.mat`, `.pdf`, and `.pptx` files are binary assets and should be committed only when intentionally updated. Generated MATLAB/Simulink artifacts such as `slprj/`, `*.slxc`, autosaves, logs, and temporary files are ignored through `.gitignore`.
 
-Before making the repository public, choose and add a license file if colleagues need explicit reuse rights.
+## License
+
+Released under the Apache License 2.0. The project is provided on an `AS IS` basis, without warranties or liability coverage beyond the limits stated in the license.
